@@ -1,38 +1,90 @@
+body {
+  background: #642B73;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6426E, #642B73);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fa {
+  font-size: 40px;
+  margin: 0px 12px;
+  color: #b1adad;
+  transition: scale 2s ease;
+  -webkit-transition: scale 2s ease;
+  -moz-transition: scale 2s ease;
+  -ms-transition: scale 2s ease;
+  -o-transition: scale 2s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fa.fa-pencil:hover {
+  color: aquamarine;
+  cursor: pointer;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.fa.fa-trash:hover {
+  color: rgb(230, 61, 61);
+  cursor: pointer;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.form1 {
+  margin-top: 50px;
+  width: 70%;
+  margin-left: 30%;
+}
+
+.form1 label {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: rgb(105, 105, 105);
+}
+
+.form1 button, .form2 button {
+  border: 1px solid grey;
+  background-color: antiquewhite;
+  font-size: 1.2rem;
+  color: #504e4e;
+  padding: 10px 15px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.form1 button:hover, .form2 button {
+  cursor: pointer;
+  background-color: rgb(187, 111, 13);
+  font-size: 1.2rem;
+  color: rgb(80, 78, 78);
   color: white;
+  padding: 10px 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 9px;
+  border: 2px solid grey;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  margin: 10px 5px;
+  text-decoration: ;
 }

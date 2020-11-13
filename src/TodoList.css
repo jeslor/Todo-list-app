@@ -1,0 +1,27 @@
+.TodoList {
+    background-color: antiquewhite;
+    width: 700px;
+    margin: 5% auto;
+    padding: 20px 22px;
+}
+
+.TodoList h1 {
+    font-size: 2.7rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.TodoList h1::after {
+    content: '';
+    height: 5px;
+    background-color: rgb(63, 138, 138);
+    width: 600px;
+    position: absolute;
+    left: 8%;
+    top: 110%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
